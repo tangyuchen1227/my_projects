@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超通用橫式版面練習</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(20deg, #95CACA,#E8FFF5, #336666);
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+           width: 566px;
+           margin: 15px;
+           display: flex; 
+           background-color: #fff;
+           border: 2px solid #FDFFFF;
+           box-shadow: 0 10px 20px rgba(0, 100, 100, 0.5);
+           font-family: 微軟正黑體;
+        }
+        .item .pic{
+            width: 50%;
+        }
+        .item .pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .item .txt{
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /*justify-content: center;*/
+        }
+        .item .txt h2{
+            margin-bottom: 0.4em;
+            font-weight: 500;
+        }
+        .item .txt p{
+            font-weight: 330;
+        }
+        .item .txt .btn{
+            line-height: 1.5em;
+            border: 1px solid #ccc;
+            padding: 0 1em;
+            align-self: flex-end;
+            text-decoration: none;
+            border-radius: 200px;
+            margin-top: auto;
+            color: #aaa;
+        }
+        .item .txt .btn:hover{
+            background-color: #ccc;
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400?random=14" alt="">
+                </div>
+                <div class="txt">
+                    <h2>斯洛伐克攝影師沙漠新作</h2>
+                    <p>斯洛伐克攝影師 Maria Svarbova以《 Swimming Pool 》系列作品而聲名大噪。</p>
+                    <a href="" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400?random=16" alt="">
+                </div>
+                <div class="txt">
+                    <h2>畫出透明感日本四季</h2>
+                    <p>Matto 以日本城市與鄉村的四季景致，做為每個月的主題。</p>
+                    <a href="" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400?random=66" alt="">
+                </div>
+                <div class="txt">
+                    <h2>魏斯安德森風格美景</h2>
+                    <p>炫麗的色彩、明朗的光影、人物置中的構圖偏好，這些都是魏斯安德森執導作品中。</p>
+                    <a href="" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400?random=17" alt="">
+                </div>
+                <div class="txt">
+                    <h2>英國熱氣球之都Bristol</h2>
+                    <p>COMPANION化身為高達42米的熱氣球，將帶領乘客翱翔高空，欣賞一望無際的風景！</p>
+                    <a href="" class="btn">more</a>
+                </div>
+            </div> 
+        </div>
+    </div> 
+</body>
+</html>
