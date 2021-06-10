@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;700&display=swap" rel="stylesheet">  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+           background: url(https://picsum.photos/800/600) center / cover; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login{
+            width: 500px;
+            height: 400px;
+            background-color: rgba(0,0,0, .5);
+            border: 5px solid #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,.8);
+            backdrop-filter: blur(3px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            width: 300px;
+            color: #fff;     
+        }
+        .form h2{
+            margin-bottom: 40px;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #fff;
+        }
+        .form .group{
+            margin-bottom: 15px;
+        }
+        .form label{
+            line-height: 2;
+        }
+        .form input{
+            width: 100%;
+            border-radius: 4px;
+            border: none;
+            line-height: 2;
+        }
+        .form .btn-group{
+            margin-top: 40px;
+            font-size: 0;
+            text-align: center;
+        }
+        .form .btn{
+            font-size: 15px;
+            font-weight: 400;
+            width: 140px;
+            padding: 5px 0;
+            background-color: brown;
+            border-radius: 3px;
+            border: none;
+            color: #fff;
+        }
+        .btn + .btn{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form">
+            <h2>會員登入</h2>
+            <div class="group">
+                <label for="user_id">帳號</label>
+                <input type="text" name="" id="user_id">
+            </div>
+            <div class="group">
+                <label for="user_password">密碼</label>
+                <input type="text" name="" id="user_password">
+            </div>
+            <div class="btn-group">
+                <button class="btn">登入</button>
+                <button class="btn">註冊</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
