@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop web-design</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=M+PLUS+1p:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'M PLUS 1p', sans-serif;
+        }
+        .banner{
+            background: linear-gradient(rgba(0,0,0,.4) 20%,rgba(0,0,0,.68) 60%, #009688), url(./Barber_Shop_img/banner.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        }
+        .logo{
+            width: 140px;
+            position: absolute;
+            top: 4%;
+            left: 10%;
+        }
+        .banner-text{
+            text-align: center;
+            color: #fff;
+            padding-top: 180px;
+        }
+        .banner-text h1{
+            font-size: 130px;
+            font-family: 'Kaushan Script', cursive;
+        }
+        .banner-text p{
+            font-size: 20px;
+            font-style: italic;
+        }
+        .banner-btn{
+            margin: 70px auto 0;
+        }
+        .banner-btn a{
+            width: 150px;
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: .5px solid #fff;
+            padding: 12px 0;
+            margin: 0 10px;
+            position: relative;
+            z-index: 1;
+            transition: .3s;
+        }
+        .banner-btn a span{
+            width: 0%;
+            height: 100%;
+            background-color: #fff;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+            transition: .3s;
+        }
+        .banner-btn a:hover span{
+            width: 100%;
+        }
+        .banner-btn a:hover{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <section class="banner">
+        <img class="logo" src="./Barber_Shop_img/logo.png" alt="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
