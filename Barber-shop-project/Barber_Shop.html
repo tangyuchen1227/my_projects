@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=M+PLUS+1p:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <style>
         *{
             margin: 0;
             padding: 0;
             font-family: 'M PLUS 1p', sans-serif;
         }
-        .banner{
+        #banner{
             background: linear-gradient(rgba(0,0,0,.4) 20%,rgba(0,0,0,.68) 60%, #009688), url(./Barber_Shop_img/banner.jpg);
             background-position: center;
             background-size: cover;
@@ -116,7 +117,7 @@
 
         /*--feature--*/
         
-        .feature{
+        #feature{
             width: 100%;
             padding: 70px 0;
         }
@@ -209,7 +210,7 @@
 
         /*--service--*/
 
-        .service{
+        #service{
             width: 100%;
             padding: 70px 0;
             background: #efefef;
@@ -287,10 +288,139 @@
             bottom: 25% !important;
             }
         }
+
+        /*--Testimonial--*/
+
+        #testimonial{
+            width: 100%;
+            padding: 70px 0;
+        }
+        .testimonial-row{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .testimonial-col{
+            flex-basis: 28%;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px 3px #00968814;
+            cursor: pointer;
+            transition: translate .5s;
+        }
+        .testimonial-col p{
+            font-size: 14px;
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            margin: 10px 0 20px;
+        }
+        .user img{
+            width: 40px;
+            margin-right: 20px;
+            border-radius: 3px;
+        }
+        .user-info .fa{
+            color: #27c0ff;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        .user-info small{
+            color: #009688;
+        }
+        .testimonial-col:hover{
+            transform: translateY(-7px);
+        }
+        @media screen and (max-width: 770px){
+            .testimonial-col{
+                flex-basis: 100%;
+            }
+        }
+
+        /*--footer--*/
+
+        #footer{
+            padding: 100px 0 20px;
+            background: #efefef;
+            position: relative;
+        }
+        .footer-row{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-left, .footer-right{
+            flex-basis: 45%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .footer-right{
+            text-align: right;
+        }
+        .footer-row h1{
+            margin: 10px 0;
+        }
+        .footer-row p{
+            line-height: 35px;
+        }
+        .footer-left .fa, .footer-right .fa{
+            font-size: 20px;
+            color: #009688;
+            margin: 10px;
+        }
+        .footer-img{
+            max-width: 370px;
+            opacity: .1;
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+        }
+        .social-links{
+            text-align: center;
+        }
+        .social-links .fa{
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            line-height: 40px;
+            color: #009688;
+            border: 1px solid #009688;
+            border-radius: 3px;
+            margin: 40px 5px 0;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .social-links .fa:hover{
+            background: #009688;
+            color: #fff;
+            transform: translateY(-7px);
+        }
+        .social-links p{
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 770px){
+            .footer-left, .footer-right{
+                flex-basis: 100%;
+                font-size: 14px;
+            }  
+            .footer-img{
+                min-width: 300px;
+                top: 22%;
+            }
+        }
     </style>
 </head>
 <body>
-    <section class="banner">
+    <section id="banner">
         <img class="logo" src="./Barber_Shop_img/logo.png" alt="logo">
         <div class="banner-text">
             <h1>Hair Studio</h1>
@@ -304,11 +434,11 @@
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Meet Us</a></li>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#footer">Meet Us</a></li>
             </ul>
         </nav>
     </div>
@@ -318,7 +448,7 @@
 
     <!--Features-->
 
-    <section class="feature">
+    <section id="feature">
         <div class="title-text">
             <p>FEATURES</p>
             <h1>Why Choose Us</h1>
@@ -361,7 +491,7 @@
 
     <!--Service-->
 
-    <section class="service">
+    <section id="service">
         <div class="title-text">
             <p>SERVICE</p>
             <h1>Ｗe Provide Better</h1>
@@ -404,7 +534,78 @@
                 </div>
             </div>
         </div>
+    </section>
 
+        <!---Testimonial--->
+
+    <section id="testimonial">
+        <div class="title-text">
+            <p>TESTIMONIAL</p>
+            <h1>What Clients Say</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="./Barber_Shop_img/img-1.jpg" alt="user-1">
+                    <div class="user-info">
+                        <h4>Sam Norman <i class="fa fa-twitter"></i></h4>
+                        <small>@samnorman</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officia cupiditate nisi earum a ullam, cum quam minima voluptatum. Ipsum, quisquam exercitationem assumenda provident nesciunt alias eos, adipisci cum odio sed, beatae soluta quo animi illo sequi placeat.</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="./Barber_Shop_img/img-2.jpg" alt="user-2">
+                    <div class="user-info">
+                        <h4>Daisy Wesley <i class="fa fa-twitter"></i></h4>
+                        <small>@daisywesley</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolor minima repudiandae libero asperiores! Officiis rerum, iste doloremque animi enim necessitatibus tempore magni, beatae sint.</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="./Barber_Shop_img/img-3.jpg" alt="user-3">
+                    <div class="user-info">
+                        <h4>Howard Peterson <i class="fa fa-twitter"></i></h4>
+                        <small>@howardpeterson</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quas cum non rerum incidunt minus saepe odio similique sunt aperiam! Facilis architecto dolore nesciunt earum. Atque, repellendus! Quia, eum? At? Facilis architecto dolore nesciunt earum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <section id="footer">
+        <img src="./Barber_Shop_img/footer-img.png" class="footer-img">
+        <div class="title-text">
+            <p>Contact Us</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hour</h1>
+                <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 9pm</p>
+                <p><i class="fa fa-clock-o"></i>Saturday to Sunday - 8am to 11 pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>No. 10, St.Colony, Taipei City<i class="fa fa-map-marker"></i></p>
+                <p>example@website.com<i class="fa fa-paper-plane"></i></p>
+                <p>+886 948530587<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube-play"></i>
+            <p>Copyright &copy; Easy Tutorials Youtube Channnel</p>
+        </div>
+    </section>
 
     <script>
     var menuBtn = document.getElementById("menuBtn")
@@ -423,6 +624,10 @@
             menu.src ="./Barber_Shop_img/menu.png";
         }
     }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+    });
     </script>
 </body>
 </html>
