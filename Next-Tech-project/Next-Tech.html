@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next-Tech-Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         *{
             box-sizing: border-box;
@@ -39,17 +43,18 @@
             background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
             background-size: 100%;
             -webkit-background-clip: text;
-            -moz-background-origin: text;
-            -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
+            -moz-background-clip: text;
+            /*-webkit-text-fill-color: transparent;*/
+            /*-moz-text-fill-color: transparent;*/
+            color: transparent;
             display: flex;
             align-items: center;
             cursor: pointer;
             text-decoration: none;
             font-size: 2rem;
         }
-        .fa-gem{
-            margin-right: 0.5rem;
+        .fa{
+            margin-right: .8rem;
         }
         .navbar_menu{
             display: flex;
@@ -58,13 +63,13 @@
             text-align: center;
         }
         .navbar_item{
-           height: 80px; 
+           height: 80px;  
         }
         .navbar_links{
             color: #fff;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             text-decoration: none;
             padding: 0 1rem;
             height: 100%;
@@ -180,12 +185,97 @@
                 transform: translateY(-8px) rotate(-45deg);
             }
         }
+
+        /*-- Hero Section--*/
+
+        .main{
+            background: #141414;
+        }
+        .main_container{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-self: center;
+            margin: 0 auto;
+            height: 90vh;
+            background-color: #141414;
+            z-index: 1;
+            width: 100%;
+            max-width: 1300px;
+            padding: 0 50px;
+        }
+        .main_content h1{
+            font-size: 4rem;
+            background-color: #ff8177;
+            background-image: linear-gradient(to top, #ff0844 0%,#ffb199 100% );
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            color: transparent;
+        }
+        .main_content h2{
+            font-size: 4rem;
+            background-color: #ff8177;
+            background-image: linear-gradient(to top, #b721ff 0%,#21d4fd 100% );
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            color: transparent;
+        }
+        .main_content p{
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        .main_btn{
+            font-size: 1rem;
+            background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+            padding: 14px 32px;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            margin-top: 2rem;
+            cursor: pointer;
+            position: relative;
+            transition: all .35s;
+            outline: none;
+        }
+        .main_btn a{
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-decoration: none;
+        }
+        .main_btn:after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #4837ff;
+            border-radius: 4px;
+            transition: all .35s;
+        }
+        .main_btn:hover:after{
+            width: 100%;
+        }
+        .main_img_container{
+            text-align: center;
+        }
+        #main_img{
+            height: 80%;
+            width: 80%;
+        }
     </style>
 </head>
 <body>
+    <!--Nav Section-->
+
     <nav class="navbar">
         <div class="navbar_container">
-            <a href="" id="navbar_logo">NEXT</a>
+            <a href="" id="navbar_logo"><i class="fa fa-diamond"></i>NEXT</a>
 
             <!--漢堡-->
             <div class="navbar_toggle" id="mobile-menu">
@@ -210,6 +300,24 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Hero Section -->
+
+    <div class="main">
+        <div class="main_container">
+            <div class="main_content">
+                <h1>NEXT GENRATION</h1>
+                <h2>TECHNOLOGY</h2>
+                <p>See what makes us different.</p>
+                <button class="main_btn">
+                    <a href="#">Get Started</a>
+                </button>
+            </div>
+            <div class="main_img_container">
+                <img src="./images/pic1.svg" alt="pic" id="main_img">
+            </div>
+        </div>
+    </div>
 
     <script>
         const menu = document.querySelector('#mobile-menu')
