@@ -268,6 +268,261 @@
             height: 80%;
             width: 80%;
         }
+        @media screen and (max-width: 768px){
+            .main_container{
+                display: grid;
+                grid-template-columns: auto;
+                align-items: center;
+                justify-self: center;
+                width: 100%;
+                margin: 0 auto;
+                height: 90vh;
+            }
+            .main_content{
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+            .main_content h1{
+                font-size: 2.5rem;
+                margin-top: 2rem;
+            }
+            .main_content h2{
+                font-size: 3rem;
+            }
+            .main_content p{
+                margin-top: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (max-width: 480px){
+            .main_content h1{
+                font-size: 2rem;
+                margin-top: 3rem;
+            }
+            .main_content h2{
+                font-size: 2rem;
+            }
+            .main_content p{
+                margin-top: 2rem;
+                font-size: 1.5rem;
+            }
+            .main_btn{
+                padding: 12px 36px;
+                margin: 2.5rem 0;
+            }
+        }
+
+        /*-- Service Section --*/
+
+        .services{
+            background: #141414;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        .services h1{
+            background-color: #ff8177;
+            background-image: linear-gradient(to right, 
+            #ff8177 0%,
+            #ff867a 0%,
+            #ff8c7f 21%,
+            #f99185 52%,
+            #cf556c 78%,
+            #b12a5b 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            color: transparent;
+            margin-bottom: 5rem;
+            font-size: 2.5rem;
+        }
+        .services_container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .services_card{
+            margin: 1rem;
+            height: 525px;
+            width: 400px;
+            border-radius: 4px;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,.6) 100%),
+            url(./images/pic3.jpg);
+            background-size: cover;
+            color: #fff;
+            position: relative;
+        }
+        .services_card:nth-child(2){
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,.6) 100%),
+            url(./images/pic4.jpg);
+        }
+        .services h2{
+            position: absolute;
+            top: 350px;
+            left: 30px;
+        }
+        .services_card p{
+            position: absolute;
+            top: 400px;
+            left: 30px;
+        }
+        .services_card button{
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background: #f77062;
+            position: absolute;
+            top: 440px;
+            left: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .services_card:hover{
+            transform: scale(1.075);
+            transition: 0.2s ease-in;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 960px){
+            .services{
+                height: 1600px;
+            }
+            .services h1{
+                font-size: 2rem;
+                margin-top: 12rem;
+            }
+        }
+        @media screen and (max-width: 480px){
+            .services{
+                height: 1400px;
+            }
+            .services h1{
+                font-size: 1.2rem;
+            }
+            .services_card{
+                width: 300px;
+            }
+        }
+
+        /*--Footer--*/
+
+        .footer_container{
+            background-color: #141414;
+            padding: 5rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer_logo{
+            color: #fff;
+            text-decoration: none;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .footer_links{
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            justify-content: center;
+        }
+        .footer_link-wrapper{
+            display: flex;
+        }
+        .footer_link-items{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 16px;
+            text-align: left;
+            width: 160px;
+            box-sizing: border-box;
+        }
+        .footer_link-items h2{
+            margin-bottom: 16px;
+        }
+        .footer_link-items > h2{
+            color: #fff;
+        }
+        .footer_link-items a{
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+        .footer_link-items a:hover{
+            color: #f77062;
+            transition: .3s ease-in;
+        }
+
+        /*--Social Icon--*/
+
+        .social_icon-link{
+            color: #fff;
+            font-size: 24px;
+        }
+        .social_media{
+            max-width: 1000px;
+            width: 100%;
+        }
+        .social_media-wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto 0 auto;
+        }
+        .social_icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 240px;
+        }
+        /*.social_logo{
+            color: #fff;
+            justify-self: flex-start;
+            display: flex; 
+            align-items: center;
+            margin-left: 20px;
+            margin-bottom: 16px;
+            font-size: 2rem;
+            cursor: pointer;
+        }*/
+        .website_right{
+            color: #fff;
+        }
+
+        @media screen and (max-width: 820px) {
+            .footer_links{
+                padding: 2rem;
+            }
+            #footer_logo{
+                margin-bottom: 2rem;
+            }
+            .website_right{
+                margin-bottom: 2rem;
+            }
+            .footer_link-wrapper{
+                flex-direction: column;
+            }
+            .social_media-wrap{
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .footer_link-items{
+                margin: 0;
+                padding: 10px;
+                width: 100%;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -315,6 +570,88 @@
             </div>
             <div class="main_img_container">
                 <img src="./images/pic1.svg" alt="pic" id="main_img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Section-->
+
+    <div class="services">
+        <h1>See What the hype is about</h1>
+        <div class="services_container">
+            <div class="services_card">
+                <h2>Experience Bliss</h2>
+                <p>AI Powered Technology</p>
+                <button>Get Started</button>
+            </div>
+            <div class="services_card">
+                <h2>Are You Ready?</h2>
+                <p>Take the leap</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <div class="footer_container">
+        <div class="footer_links">
+            <div class="footer_link-wrapper">
+                <div class="footer_link-items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer_link-items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Destination</a>
+                    <a href="/">Sponsorships</a>
+                </div>
+            </div>
+            <div class="footer_link-wrapper">
+                <div class="footer_link-items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a>
+                    <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                    <a href="/">Influencer</a>
+                </div>
+                <div class="footer_link-items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">Youtube</a>
+                    <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="social_media">
+            <div class="social_media-wrap">
+                <div class="footer_logo">
+                    <a href="/" id="footer_logo"><i class="fa fa-diamond"></i>NEXT</a>
+                </div>
+                <p class="website_right">&copy; NEXT 2020. All rights reserved</p>
+                <div class="social_icons">
+                    <a href="" class="social_icon-link" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="" class="social_icon-link" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="" class="social_icon-link" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="" class="social_icon-link" target="_blank">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                    <a href="" class="social_icon-link" target="_blank">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
